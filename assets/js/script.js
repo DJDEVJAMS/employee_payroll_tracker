@@ -1,5 +1,5 @@
 // Get a reference to the #add-employees-btn element
-const addEmployeesBtn = document.querySelector(`#add-employees-btn`);
+const addEmployeesBtn = document.querySelector("#add-employees-btn");
 
 // Collect employee data
 const employeesArray = [];
@@ -11,9 +11,9 @@ const collectEmployees = function () {
 // check for scope later^^^
   while (keepGoing) {
     // TODO: Get user input to create and return an array of employee objects
-    const firstName = prompt(`Please enter the employee's first name`);
-    const lastName = prompt(`Please enter the employee's last name`);
-    let salary = prompt(`Please enter the employee's salary`);
+    const firstName = prompt("Please enter the employee's first name");
+    const lastName = prompt("Please enter the employee's last name");
+    let salary = prompt("Please enter the employee's salary");
 
     // employee object
     const employee = {
@@ -24,9 +24,9 @@ const collectEmployees = function () {
     // push employee to employeesArray
     employeesArray.push(employee);
 
-    keepGoing = confirm(`Would you like to add another employee?`);
+    keepGoing = confirm("Would you like to add another employee?");
     // "OK" = true, "Cancel" = false
-  
+  }
   return employeesArray;
 };
 console.log(employeesArray);
@@ -45,19 +45,15 @@ const displayAverageSalary = function (employeesArray) {
   console.log(`Your employees have an average of ${avgSalary} dollars!`);
 };
 
-
 // Select a random employee
-// TODO: Select and display a random employee
-}
-
 const getRandomEmployee = function(employeesArray) {
   const randomEmployee = employeesArray[Math.floor(Math.random()*employeesArray.length)];
 
-  console.log(`${randomEmployee.firstName} ${randomEmployee.lastName}, won the random drawing!!`)
-}
+  console.log(`Congratulations to ${randomEmployee.firstName} ${randomEmployee.lastName}, our random drawing winner!`)
+};
 
 /*
-  ====================
+====================
   STARTER CODE
   Do not modify any of the code below this line:
 */
@@ -74,21 +70,21 @@ const displayEmployees = function(employeesArray) {
   for (let i = 0; i < employeesArray.length; i++) {
     const currentEmployee = employeesArray[i];
 
-    const newTableRow = document.createElement(`tr`);
+    const newTableRow = document.createElement("tr");
 
-    const firstNameCell = document.createElement(`td`);
+    const firstNameCell = document.createElement("td");
     firstNameCell.textContent = currentEmployee.firstName;
     newTableRow.append(firstNameCell);
 
-    const lastNameCell = document.createElement(`td`);
+    const lastNameCell = document.createElement("td");
     lastNameCell.textContent = currentEmployee.lastName;
     newTableRow.append(lastNameCell);
 
-    const salaryCell = document.createElement(`td`);
+    const salaryCell = document.createElement("td");
     // Format the salary as currency
-    salaryCell.textContent = currentEmployee.salary.toLocaleString(`en-US`,{
-      style:`currency`,
-      currency:`USD`
+    salaryCell.textContent = currentEmployee.salary.toLocaleString("en-US",{
+      style:"currency",
+      currency:"USD"
     });
 
     newTableRow.append(salaryCell);
