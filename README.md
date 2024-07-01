@@ -18,10 +18,6 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 Will A and Mary E collaborated with me to design the project. 
 
-## Badges
-
-![badmath](https://djdevjams.github.io/employee_payroll_tracker/)
-
 ## Tests
 
 Tests concluded with employees salary being adveraged correctly.
