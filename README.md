@@ -26,4 +26,4 @@ Will A and Mary E collaborated with me to design the project.
 
 Tests concluded with employees salary being adveraged correctly.
 
-![alt text](./assets/03-Javascript-demo.gif)
+![alt text](./assets/03-Javascript-demo.gif) 
