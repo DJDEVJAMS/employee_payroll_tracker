@@ -20,7 +20,7 @@ Will A and Mary E collaborated with me to design the project.
 
 ## Badges
 
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
+![badmath](https://djdevjams.github.io/employee_payroll_tracker/)
 
 ## Tests
 
